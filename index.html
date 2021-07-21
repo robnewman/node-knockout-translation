@@ -1,0 +1,19 @@
+<html>
+  <head>
+      <title>SPA Translation Example</title>
+      <link rel="stylesheet" href="css/spa.css" />
+  </head>
+  <body>
+    <h1>I'm a single page application! See me translate!</h1>
+    <ul data-bind="foreach: todoItems">
+        <li>
+          <span data-bind="text: name"></span>
+          <input type="checkbox" data-bind="checked: complete" />
+        </li>
+      </ul>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js"></script>
+  <script src="https://raw.github.com/stevegreatrex/JsUtils/master/JsUtils/utils.min.js"></script>
+  <script src="js/page.js"></script>
+</html>
